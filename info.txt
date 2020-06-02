@@ -1,0 +1,8 @@
+mvn install:install-file -Dfile="C:\IdeaProjects\alien4cloud\lib\calm-yeoman-maven-plugin-1.0.3.jar" -DgroupId=fr.fastconnect -DartifactId=calm-yeoman-maven-plugin -Dversion=1.0.3 -Dpackaging=jar
+mvn deploy:deploy-file -Dfile="C:\IdeaProjects\alien4cloud\lib\calm-yeoman-maven-plugin-1.0.3.jar" -DgroupId=fr.fastconnect -DartifactId=calm-yeoman-maven-plugin -Dversion=1.0.3 -Dpackaging=jar -DgeneratePom=true -DrepositoryId=nexus -Durl=http://localhost:8081/repository/maven-releases/
+mvn install:install-file -Dfile="C:\IdeaProjects\alien4cloud\lib\alien4cloud-wizard-ui-2.2.0-SM10.zip" -DgroupId=alien4cloud -DartifactId=alien4cloud-wizard-ui -Dversion=2.2.0-SM10 -Dpackaging=zip
+mvn deploy:deploy-file -Dfile="C:\IdeaProjects\alien4cloud\lib\alien4cloud-wizard-ui-2.2.0-SM10.zip" -DgroupId=alien4cloud -DartifactId=alien4cloud-wizard-ui -Dversion=2.2.0-SM10 -Dpackaging=zip -DgeneratePom=true -DrepositoryId=nexus -Durl=http://localhost:8081/repository/maven-releases/
+-- -U forces update in cache
+mvn clean install -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -U
+mvn compile -U
+mvn package -U

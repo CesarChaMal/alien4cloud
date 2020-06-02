@@ -545,11 +545,14 @@
   <repositories>
     <repository>
       <id>repo.opensource.fastconnect.org</id>
-      <url>http://fastconnect.org/maven/content/repositories/opensource</url>
+      <!-- <url>http://fastconnect.org/maven/content/repositories/opensource</url> -->
+      <!-- <url>https://www.portaildulibre.fr/nexus/service/rest/repository/browse/opensource-releases</url> -->
+      <url>http://www.portaildulibre.fr/nexus/repository/opensource-releases/</url>
     </repository>
     <repository>
       <id>repo.opensource.snapshot.fastconnect.org</id>
-      <url>http://fastconnect.org/maven/content/repositories/opensource-snapshot</url>
+      <!-- <url>http://fastconnect.org/maven/content/repositories/opensource-snapshot</url> -->
+      <url>http://www.portaildulibre.fr/nexus/repository/opensource-snapshots/</url>
     </repository>
     <repository>
       <id>projectlombok.org</id>
@@ -571,22 +574,26 @@
   <pluginRepositories>
     <pluginRepository>
       <id>repo.opensource.fastconnect.org</id>
-      <url>https://fastconnect.org/maven/content/repositories/opensource</url>
+      <!-- <url>https://fastconnect.org/maven/content/repositories/opensource</url> -->
+      <url>https://www.portaildulibre.fr/nexus/repository/opensource-releases/</url>
     </pluginRepository>
     <pluginRepository>
       <id>repo.opensource.snapshot.fastconnect.org</id>
-      <url>https://fastconnect.org/maven/content/repositories/opensource-snapshot</url>
+      <!-- <url>https://fastconnect.org/maven/content/repositories/opensource-snapshot</url> -->
+      <url>https://www.portaildulibre.fr/nexus/repository/opensource-snapshots/</url>
     </pluginRepository>
   </pluginRepositories>
 
   <distributionManagement>
     <repository>
       <id>repo.opensource.fastconnect.org</id>
-      <url>https://fastconnect.org/maven/content/repositories/opensource</url>
+      <!-- <url>https://fastconnect.org/maven/content/repositories/opensource</url> -->
+      <url>https://www.portaildulibre.fr/nexus/repository/opensource-releases/</url>
     </repository>
     <snapshotRepository>
       <id>repo.opensource.snapshot.fastconnect.org</id>
-      <url>https://fastconnect.org/maven/content/repositories/opensource-snapshot</url>
+      <!-- <url>https://fastconnect.org/maven/content/repositories/opensource-snapshot</url> -->
+      <url>https://www.portaildulibre.fr/nexus/repository/opensource-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
